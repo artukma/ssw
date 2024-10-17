@@ -1,0 +1,9 @@
+body{
+    font-family: 'Afacad Flux', monospace;
+    src: url('fonts/AfacadFlux.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: #d3d3d3;
+}

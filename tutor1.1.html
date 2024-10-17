@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Artem Tukmakov" content="Tutor1">
+        <meta name="description" content="This is the first tutor about HTML">
+        <title>Tutor1</title>
+        <style>
+            @font-face {
+                font-family: 'Century Gothic';
+                src: url('fonts/century-gothic.ttf') format('truetype');
+            }
+            body {
+                font-family: 'Century Gothic', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                font-size: 2.5em;
+            }
+            h5 {
+                text-align: center;
+                color: #34495e;
+                font-weight: normal;
+            }
+            p, ol {
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+            ol {
+                padding-left: 20px;
+            }
+            p4 {
+                font-weight: bold;
+            }
+            a {
+                color: #2980b9;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover {
+                color: #1abc9c;
+            }
+            img {
+                width: 500px;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin: 20px 0;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table th, table td {
+                padding: 12px;
+                text-align: left;
+            }
+            table th {
+                background-color: #2c3e50;
+                color: white;
+            }
+            table tr:nth-child(even) {
+                background-color: #ecf0f1;
+            }
+            table tr:hover {
+                background-color: #bdc3c7;
+            }
+            form {
+                margin: 20px 0;
+            }
+            input[type="text"], textarea, select {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1em;
+            }
+            input[type="submit"], input[type="reset"] {
+                padding: 10px 20px;
+                margin-right: 10px;
+                background-color: #2ecc71;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover, input[type="reset"]:hover {
+                background-color: #27ae60;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><b>This is my first tutor about HTML</b></h1>
+        <h5>HTML is the <b><i>standard markup language</i></b> for creating Web pages.</h5>
+        <p>I came from Ukraine and really want to dive into the management field, and probably cybersecurity in future.
+            I hope this <i>SSW course</i> will help me a little bit.
+        </p>
+        <p4>My hobbies are:</p4>
+        <ol>
+            <li>Swimming</li>
+            <li>Reading</li>
+            <li>Watching films</li>
+        </ol>
+        <div style="text-align: center;">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div style="text-align: center;">
+            <a href="https://www.youtube.com/watch?v=OEV8gMkCHXQ&ab_channel=Fireship">Watch this Fireship video about CSS</a>
+        </div>
+        <table border="3">
+            <tr>
+                <th>Subject</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>SWW</td>
+                <td>Tutorial at 14:00</td>
+            </tr>
+            <tr>
+                <td>SAD</td>
+                <td>Tutorial at 16:00</td>
+            </tr>
+            <tr>
+                <td>SAD</td>
+                <td>Lecture at 18:00</td>
+            </tr>
+        </table>
+        <form>
+            User:
+            <input type="text" name="user" id="user"/><br/>
+            Password:
+            <input type="password" name="password" id="password"/> <br>
+            <input type="checkbox" value="I Agree" name="agree" />I agree to terms and conditions<br>
+        
+            <p>Provide about 100 words of information about yourself</p>
+            <textarea name="comment" rows="5" cols="40">Enter text here...</textarea><br>
+            <h2>Select Your Favorite Programming Language</h2>
+            <label for="programming-language">Choose a language:</label>
+            <select id="programming-language" name="programming-language">
+                <optgroup label="Frontend">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="ruby">Ruby</option>
+                    <option value="go">Go</option>
+                    <option value="swift">Swift</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </form>
+    </body>
+</html>
